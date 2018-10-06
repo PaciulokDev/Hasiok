@@ -1,0 +1,2 @@
+# Hasiok
+Uczymy się programować
