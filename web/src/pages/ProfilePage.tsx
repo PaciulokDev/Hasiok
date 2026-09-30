@@ -75,6 +75,7 @@ function GallerySection({ user }: { user: MyProfile }) {
         action={{
           label: 'Usuń',
           onClick: async (meme) => {
+            if (!window.confirm('Usunąć mema z galerii?')) return;
             await api.deleteMeme(meme.id);
             await refresh();
           },
