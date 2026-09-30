@@ -1,0 +1,13 @@
+{
+  "name": "hasiok",
+  "private": true,
+  "workspaces": ["shared", "server", "web", "mobile"],
+  "scripts": {
+    "dev:server": "npm run dev -w server",
+    "dev:web": "npm run dev -w web",
+    "dev:mobile": "npm run start -w mobile",
+    "seed": "npm run seed -w server",
+    "test": "npm test -w shared && npm test -w server",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  }
+}

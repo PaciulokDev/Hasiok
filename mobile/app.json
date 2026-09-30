@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Hasiok",
+    "slug": "hasiok",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "pl.hasiok.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "pl.hasiok.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "hasiok",
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Hasiok potrzebuje dostępu do zdjęć, żeby dodać memy do Twojej galerii."
+        }
+      ]
+    ]
+  }
+}

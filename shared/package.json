@@ -1,0 +1,17 @@
+{
+  "name": "@hasiok/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "tsx --test src/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3"
+  }
+}
